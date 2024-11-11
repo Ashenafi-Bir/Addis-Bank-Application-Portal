@@ -1,0 +1,53 @@
+
+
+
+/* Parent container styles */
+.parent-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+
+}
+
+/* Title container styles */
+.animated-title-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid var(--secondary-color);
+  height: 50px; 
+  white-space: nowrap; 
+  font-size: 28px;
+  font-weight: 700;
+  font-family: Lato, sans-serif;
+  color: var(--primary-color);
+  padding: 0 50px;
+  margin-bottom: 5px;
+}
+  
+  .title-part {
+    position: relative;
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Use the default duration or the prop value */
+  }
+  
+  .title-part.left {
+    transform: translateX(-100%);
+  }
+  
+  .title-part.right {
+    transform: translateX(100%);
+  }
+  
+  .title-part.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .title-space {
+    min-width: 20px; /* Add space between the two parts */
+    display: inline-block;
+  }
+  

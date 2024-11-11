@@ -1,0 +1,42 @@
+
+
+.sidebar {
+  background-color: var(--primary-color);
+  width: 200px;
+  height: 100vh; /* Full viewport height */
+  position: fixed;
+  left: 0;
+padding-top: 80px;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: var(--secondary-color);
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar-link:hover {
+  background-color: #003366; /* Darker shade for hover */
+  color: #f1c40f; /* Gold color on hover */
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
